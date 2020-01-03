@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07542CC423BF9BD80022FEFE /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = 07542CC323BF9BD80022FEFE /* .travis.yml */; };
 		07FDE08A23BD92950042E94C /* NotificationPusher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FDE08923BD92950042E94C /* NotificationPusher.swift */; };
 		07FDE0B123BE55EB0042E94C /* NotificationPusherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FDE0B023BE55EB0042E94C /* NotificationPusherTests.swift */; };
 		07FDE0B323BE55EB0042E94C /* NotificationPusher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FDE07E23BD92270042E94C /* NotificationPusher.framework */; };
@@ -31,6 +32,7 @@
 
 /* Begin PBXFileReference section */
 		0752878423BF7F8400E273EF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		07542CC323BF9BD80022FEFE /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .travis.yml; sourceTree = "<group>"; };
 		07FDE07E23BD92270042E94C /* NotificationPusher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NotificationPusher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		07FDE08223BD92270042E94C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07FDE08923BD92950042E94C /* NotificationPusher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationPusher.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 		07FDE07423BD92270042E94C = {
 			isa = PBXGroup;
 			children = (
+				07542CC323BF9BD80022FEFE /* .travis.yml */,
 				0752878423BF7F8400E273EF /* README.md */,
 				07FDE08023BD92270042E94C /* NotificationPusher */,
 				07FDE0AF23BE55EB0042E94C /* NotificationPusherTests */,
@@ -248,6 +251,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07542CC423BF9BD80022FEFE /* .travis.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
