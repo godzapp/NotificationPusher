@@ -1,0 +1,19 @@
+{
+  "Mac" : [
+
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "commitish" : "3b7d42cdf75d90963c09462274bfd20547ec8bdf",
+  "iOS" : [
+    {
+      "name" : "NotificationPusher",
+      "hash" : "0333aac16a937d54ecc2533fdf4cc642b124f4b0d175182a39b450d351a2ca1f",
+      "swiftToolchainVersion" : "5.1.3 (swiftlang-1100.0.282.1 clang-1100.0.33.15)"
+    }
+  ]
+}

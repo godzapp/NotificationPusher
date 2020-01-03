@@ -19,10 +19,30 @@
 			<key>orderHint</key>
 			<integer>2</integer>
 		</dict>
-		<key>NotificationPusherTestsApp.xcscheme_^#shared#^_</key>
+		<key>NotificationPusherTestsApp.xcscheme</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
 			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>07FDE07D23BD92270042E94C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>07FDE0AD23BE55EB0042E94C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>07FDE0BC23BE566D0042E94C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

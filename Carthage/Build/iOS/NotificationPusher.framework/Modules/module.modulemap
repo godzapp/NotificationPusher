@@ -1,0 +1,4 @@
+framework module NotificationPusher {
+  header "NotificationPusher-Swift.h"
+  requires objc
+}
