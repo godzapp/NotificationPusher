@@ -9,7 +9,7 @@
 import NotificationCenter
 
 public class NotificationPusher {
-  private var identifier: String
+  private var identifier: String = ""
   private var notification: UNMutableNotificationContent
   
   public static var shared: NotificationPusher = NotificationPusher()
@@ -21,7 +21,7 @@ public class NotificationPusher {
   private var instantly: Bool = false
   
   // User defined time interval
-  private var interval: Double
+  private var interval: Double = 0.0
   
   // Allow the notification to be repeated
   public var repeats: Bool {
@@ -35,16 +35,10 @@ public class NotificationPusher {
     set(bool) { instantly = bool }
   }
   
-  // Flag the notification as registered when done
-  private var registered: Bool = false
-  
   init() {
-    self.identifier = ""
-    self.interval = 0.0
-    
     // Initialize my local notification
-    notification = UNMutableNotificationContent()
-    notification.sound = UNNotificationSound(named: UNNotificationSoundName(rawValue: Sound.Default.rawValue))
+    self.notification = UNMutableNotificationContent()
+    self.notification.sound = UNNotificationSound(named: UNNotificationSoundName(rawValue: Sound.Default.rawValue))
   }
   
   // MARK: Reset Content
@@ -54,7 +48,10 @@ public class NotificationPusher {
     notification.sound = UNNotificationSound(named: UNNotificationSoundName(rawValue: Sound.Default.rawValue))
     
     // By default the notification will not be repeated
-    repeated = false
+    self.repeated = false
+    self.instants = false
+    self.interval = 0.0
+    self.identifier = ""
   }
   
   // MARK: Register Notification
@@ -66,12 +63,6 @@ public class NotificationPusher {
     UNUserNotificationCenter.current().getNotificationSettings {[unowned self] settings in
       guard settings.authorizationStatus == .authorized else {
         handler(false, NPError.WrongAuthorization)
-        return
-      }
-      
-      // Assert that the notification wasn't already registered
-      guard !self.registered else {
-        handler(false, NPError.AlreadyRegister)
         return
       }
       
