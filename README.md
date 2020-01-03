@@ -28,16 +28,16 @@ NotificationPusher.shared.register(handler: (Bool, Error?) -> Void)
 
 ### Notification Configuration
 ```swift
-- The notification will be send instantly
+> The notification will be send instantly
 NotificationPusher.shared.instants = false
 
-- The notification will be repeated
+> The notification will be repeated
 NotificationPusher.shared.repeats = false
 
-- Set a specific sound for the notification
+> Set a specific sound for the notification
 NotificationPusher.set(sound: Sound)
 
-- Set a subtitle to the notificiation
+> Set a subtitle to the notificiation
 NotificationPusher.set(subtitle: String)
 ```
 
