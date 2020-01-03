@@ -56,3 +56,7 @@ NotificationPusher.pendingCount(withIdentifier: String = nil, handler: ((Int) ->
 NotificationPusher.deliveredCount(withIdentifier: String = nil, handler: ((Int) -> Void))
 NotificationPusher.clean()
 ```
+
+# Author
+
+DOUPAGNE Yoann [@godzapp](https://github.com/godzapp)
