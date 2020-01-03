@@ -1,4 +1,5 @@
 #  Notification Pusher
+ [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Installation
 
@@ -21,7 +22,7 @@ NotificationPusher.shared.set(body: String)
 NotificationPusher.shared.register(handler: (Bool, Error?) -> Void)
 ```
 
-4. Repeat for every other notification !
+6. Repeat for every other notification !
 
 ## Existing methods
 
