@@ -3,8 +3,9 @@
 
 ## Installation
 
+### Carthage
 ```ruby
-pod 'NotificationPusher'
+github "godzapp/NotificationPusher" "1.0"
 ```
 
 ## Basic Usage
