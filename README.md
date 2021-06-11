@@ -17,13 +17,6 @@ github "godzapp/NotificationPusher" "1.0"
 3. Set a notification title
 4. Set a body to the notification
 5. Register the notification
-```swift
-NotificationPusher.shared.set(identifier: String)
-NotificationPusher.shared.set(interval: TimeInterval)
-NotificationPusher.shared.set(title: String)
-NotificationPusher.shared.set(body: String)
-NotificationPusher.shared.register(handler: (Bool, Error?) -> Void)
-```
 
 6. Repeat for every other notification !
 
